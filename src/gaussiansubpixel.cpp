@@ -62,7 +62,7 @@ PivPointData gaussianSubPixel(double *cmap, int intLengthX, int intLengthY)
     {
         for (j = 0; j < _intLengthX*2; j++)
         {
-            if (!(i < (maxI+1) && i > (maxI-1) && j < (maxJ+1) && j < (maxJ-1)))
+            if (!(i < (maxI+1) && i > (maxI-1) && j < (maxJ+1) && j > (maxJ-1)))
             {
                 mean += fabs(cmap[_intLengthX*2*i + j]);
                 count++;
