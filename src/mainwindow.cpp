@@ -213,16 +213,16 @@ void MainWindow::initializeProcessTab()
     int i, index;
     double power2;
 
-    for (i = 0; i < 4; i++)
+    for (i = 0; i < 6; i++)
     {
-        power2 = pow(2.0,double(4+i));
+        power2 = pow(2.0,double(3+i));
         hSizeCombo->insertItem(i,QString("%1").arg(power2));
         vSizeCombo->insertItem(i,QString("%1").arg(power2));
     }
 
-    index = int(log10(double(settings->intLengthX())) / log10(2.0)) - 4;
+    index = int(log10(double(settings->intLengthX())) / log10(2.0)) - 3;
     hSizeCombo->setCurrentIndex(index);
-    index = int(log10(double(settings->intLengthY())) / log10(2.0)) - 4;
+    index = int(log10(double(settings->intLengthY())) / log10(2.0)) - 3;
     vSizeCombo->setCurrentIndex(index);
 
     hSpaceSpin->setMinimum(0);

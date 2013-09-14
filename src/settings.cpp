@@ -78,14 +78,14 @@ void Settings::changeDeltaY()
 int Settings::intLengthX() { return _intLengthX; }
 void Settings::setIntLengthX(int intLengthXPass)
 {
-    _intLengthX = int(pow(2.0,double(4+intLengthXPass)));
+    _intLengthX = int(pow(2.0,double(3+intLengthXPass)));
     changeDeltaX();
 }
 
 int Settings::intLengthY() { return _intLengthY; }
 void Settings::setIntLengthY(int intLengthYPass)
 {
-    _intLengthY = int(pow(2.0,double(4+intLengthYPass)));
+    _intLengthY = int(pow(2.0,double(3+intLengthYPass)));
     changeDeltaY();
 }
 
